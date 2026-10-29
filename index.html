@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff4f5">
+    <title>A birthday surprise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fredoka:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="progress-track" aria-hidden="true">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <div class="curtain" id="curtain" aria-label="Birthday surprise introduction">
+        <div class="curtain-panel curtain-panel-left" aria-hidden="true"></div>
+        <div class="curtain-panel curtain-panel-right" aria-hidden="true"></div>
+        <div class="curtain-content">
+            <span class="curtain-gift" aria-hidden="true">🎁</span>
+            <h1>Someone has a surprise for you</h1>
+            <button class="button" id="open-party" type="button">Open the party <span
+                    aria-hidden="true">✦</span></button>
+        </div>
+    </div>
+
+    <main class="site" id="site" inert>
+        <span class="watermark" aria-hidden="true">By Kartik</span>
+        <nav class="section-nav" aria-label="Page sections">
+            <a href="#birthday" aria-label="Birthday cake" aria-current="location"><span>Birthday cake</span></a>
+            <a href="#blessings" aria-label="Blessings"><span>Blessings</span></a>
+            <a href="#surprise" aria-label="A little surprise"><span>A little surprise</span></a>
+            <a href="#finale" aria-label="Final wish"><span>Final wish</span></a>
+        </nav>
+        <div class="balloon-layer" id="balloon-layer" aria-hidden="true"></div>
+
+        <section class="section hero" id="birthday" aria-labelledby="birthday-title">
+            <div class="section-inner">
+                <p class="eyebrow">A day made for you</p>
+                <h1 class="hero-title" id="birthday-title">Happy Birthday,<br> <span id="hero-name">Kartikey</span>!</h1>
+                <p class="section-subtitle" id="cake-subtitle">Make a wish, then blow out the candles.</p>
+                <div class="cake-area" id="cake-area">
+                    <svg class="wind" viewBox="0 0 520 230" aria-hidden="true">
+                        <path d="M4 82 C90 28 145 137 238 78 S390 38 514 85" />
+                        <path d="M8 123 C95 82 151 166 248 119 S390 83 509 119" />
+                        <path d="M18 162 C111 128 166 195 268 155 S407 127 502 151" />
+                    </svg>
+                    <svg class="cake-svg" viewBox="0 0 520 310" role="img"
+                        aria-label="A pink birthday cake with three candles">
+                        <ellipse cx="260" cy="274" rx="190" ry="20" fill="#d9aab5" opacity=".35" />
+                        <ellipse cx="260" cy="253" rx="177" ry="31" fill="#fff8ed" stroke="#e9c9b9" stroke-width="4" />
+                        <path
+                            d="M106 173 Q106 157 122 157 H398 Q414 157 414 173 V245 Q414 260 398 260 H122 Q106 260 106 245Z"
+                            fill="#ff9eb3" />
+                        <path
+                            d="M106 177 Q127 191 148 177 T190 177 T232 177 T274 177 T316 177 T358 177 T414 177 V202 Q393 218 372 202 T330 202 T288 202 T246 202 T204 202 T162 202 T106 202Z"
+                            fill="#fff2ed" />
+                        <ellipse cx="260" cy="157" rx="154" ry="24" fill="#ffc4d2" />
+                        <path d="M160 112 Q160 99 174 99 H346 Q360 99 360 112 V156 H160Z" fill="#ffc4a8" />
+                        <path
+                            d="M160 114 Q180 128 200 114 T240 114 T280 114 T320 114 T360 114 V135 Q340 148 320 135 T280 135 T240 135 T200 135 T160 135Z"
+                            fill="#fff8ed" />
+                        <ellipse cx="260" cy="99" rx="100" ry="19" fill="#ffe0d1" />
+                        <g fill="#fff0b3">
+                            <circle cx="145" cy="222" r="6" />
+                            <circle cx="185" cy="237" r="5" />
+                            <circle cx="230" cy="218" r="6" />
+                            <circle cx="276" cy="239" r="5" />
+                            <circle cx="321" cy="217" r="6" />
+                            <circle cx="371" cy="234" r="5" />
+                        </g>
+                        <g stroke="#fff8ed" stroke-width="4" stroke-linecap="round">
+                            <path d="M207 96 V55" />
+                            <path d="M260 94 V43" />
+                            <path d="M313 96 V55" />
+                        </g>
+                        <g class="flame" id="flame-1">
+                            <path d="M207 53 C188 37 207 22 207 14 C225 31 228 42 207 53Z" fill="#ffb43f" />
+                            <path d="M207 47 C199 39 207 31 208 27 C216 38 215 43 207 47Z" fill="#fff0a5" />
+                        </g>
+                        <g class="flame" id="flame-2">
+                            <path d="M260 41 C241 25 260 10 260 2 C278 19 281 30 260 41Z" fill="#ffb43f" />
+                            <path d="M260 35 C252 27 260 19 261 15 C269 26 268 31 260 35Z" fill="#fff0a5" />
+                        </g>
+                        <g class="flame" id="flame-3">
+                            <path d="M313 53 C294 37 313 22 313 14 C331 31 334 42 313 53Z" fill="#ffb43f" />
+                            <path d="M313 47 C305 39 313 31 314 27 C322 38 321 43 313 47Z" fill="#fff0a5" />
+                        </g>
+                        <g class="smoke" id="smoke-1" fill="none" stroke="#a8a2ad" stroke-width="5"
+                            stroke-linecap="round">
+                            <path d="M207 50 C195 40 220 36 207 25" />
+                        </g>
+                        <g class="smoke" id="smoke-2" fill="none" stroke="#a8a2ad" stroke-width="5"
+                            stroke-linecap="round">
+                            <path d="M260 38 C248 28 273 24 260 13" />
+                        </g>
+                        <g class="smoke" id="smoke-3" fill="none" stroke="#a8a2ad" stroke-width="5"
+                            stroke-linecap="round">
+                            <path d="M313 50 C301 40 326 36 313 25" />
+                        </g>
+                    </svg>
+                </div>
+                <button class="button" id="blow-candles" type="button">Blow the candles <span
+                        aria-hidden="true">↗</span></button>
+                <span class="scroll-hint" id="scroll-hint">Your wish is on its way. Take a little look below ↓</span>
+            </div>
+        </section>
+
+        <section class="section blessings" id="blessings" aria-labelledby="blessings-title">
+            <div class="section-inner">
+                <p class="eyebrow">A few things we hope for you</p>
+                <h2 id="blessings-title">Blessings just for you</h2>
+                <p class="section-subtitle">Tap a card to open it.</p>
+                <div class="blessing-grid">
+                    <div class="blessing-item" style="--card-delay: 0ms"><button class="flip-card card-heart"
+                            type="button" aria-pressed="false" aria-label="Open heart blessing">
+                            <span class="flip-card-inner"><span class="flip-card-face flip-card-front"><span
+                                        class="card-icon" aria-hidden="true">♡</span><strong>A gentle
+                                        year</strong><span>Tap to open</span></span><span
+                                    class="flip-card-face flip-card-back">
+                                    <p>May this year be gentle with you and generous with its surprises.</p>
+                                </span></span>
+                        </button></div>
+                    <div class="blessing-item" style="--card-delay: 120ms"><button class="flip-card card-star"
+                            type="button" aria-pressed="false" aria-label="Open star blessing">
+                            <span class="flip-card-inner"><span class="flip-card-face flip-card-front"><span
+                                        class="card-icon" aria-hidden="true">✦</span><strong>More
+                                        laughter</strong><span>Tap to open</span></span><span
+                                    class="flip-card-face flip-card-back">
+                                    <p>Wishing you more laughs than worries, and more cake than you can finish.</p>
+                                </span></span>
+                        </button></div>
+                    <div class="blessing-item" style="--card-delay: 240ms"><button class="flip-card card-flower"
+                            type="button" aria-pressed="false" aria-label="Open flower blessing">
+                            <span class="flip-card-inner"><span class="flip-card-face flip-card-front"><span
+                                        class="card-icon" aria-hidden="true">❀</span><strong>Just being
+                                        you</strong><span>Tap to open</span></span><span
+                                    class="flip-card-face flip-card-back">
+                                    <p>You make ordinary days brighter just by being in them. Thank you for being you.
+                                    </p>
+                                </span></span>
+                        </button></div>
+                    <div class="blessing-item" style="--card-delay: 360ms"><button class="flip-card card-moon"
+                            type="button" aria-pressed="false" aria-label="Open moon blessing">
+                            <span class="flip-card-inner"><span class="flip-card-face flip-card-front"><span
+                                        class="card-icon" aria-hidden="true">☾</span><strong>New
+                                        adventures</strong><span>Tap to open</span></span><span
+                                    class="flip-card-face flip-card-back">
+                                    <p>Here's to new adventures, small joys, and every wish on your list coming true.
+                                    </p>
+                                </span></span>
+                        </button></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section surprise" id="surprise" aria-labelledby="surprise-title">
+            <div class="section-inner">
+                <p class="eyebrow">Wrapped with love</p>
+                <h2 id="surprise-title">A little surprise</h2>
+                <p class="section-subtitle">Give the gift a tap.</p>
+                <div class="gift-stage" id="gift-stage">
+                    <button class="gift-trigger" id="gift-trigger" type="button" aria-label="Open your birthday gift"
+                        aria-expanded="false">
+                        <span class="gift-lid" aria-hidden="true"></span><span class="gift-box"
+                            aria-hidden="true"></span>
+                    </button>
+                    <div class="gift-note" id="gift-note" aria-live="polite"><strong>For <span class="name-slot"></span>
+                            ✦</strong>
+                        <p>Wishing you a year full of small joys and big wins.</p>
+                    </div>
+                </div>
+                <p class="gift-hint" id="gift-hint">A little note is waiting inside.</p>
+            </div>
+        </section>
+
+        <section class="section finale" id="finale" aria-labelledby="finale-title">
+            <div class="night-sky" id="night-sky" aria-hidden="true">
+                <div class="moon"></div>
+                <div class="shooting-star"></div>
+            </div>
+            <span class="wish-star" id="wish-star" aria-hidden="true">★</span>
+            <div class="wish-sparkle-layer" id="wish-sparkle-layer" aria-hidden="true"></div>
+            <div class="section-inner">
+                <p class="eyebrow">Keep one more wish</p>
+                <h2 id="finale-title">One last thing</h2>
+                <p class="section-subtitle">Hold your wish in your heart, then send it up.</p>
+                <button class="button wish-button" id="send-wish" type="button">Send my wish <span
+                        aria-hidden="true">✧</span></button>
+                <div class="final-message" id="final-message" aria-live="polite">
+                    <h2>Happy Birthday, <span class="name-slot"></span>!</h2>
+                    <p>May every wish come true.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <canvas class="confetti-canvas" id="confetti" aria-hidden="true"></canvas>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
